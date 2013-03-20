@@ -38,7 +38,8 @@ function MightyDuck(element, data){
 			fillOpacity = 0.3;
 
 	var stroke = true,
-			strokeWidth = 1;
+			strokeWidth = 1,
+			strokeOpacity = 1;
 
 	var tooltips = false;
 
@@ -139,6 +140,7 @@ function MightyDuck(element, data){
 				.attr("d", line(data[i].values))
 				.style("stroke", dataColor)
 				.style("stroke-width", strokeWidth)
+				.style("stroke-opacity", strokeOpacity)
 				.style("fill", "none");
 		}
 	}
